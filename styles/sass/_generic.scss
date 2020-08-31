@@ -1,0 +1,123 @@
+html {
+    font-size: 62.5%;
+}
+body{
+    color:$body-text-color;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size:2rem;
+    text-align:left;
+}
+.wrapper{
+    width:90%;
+    max-width:1400px;
+    min-width:320px;
+    margin:0 auto;
+}
+h1{
+    font-size:4rem; //Company's logo
+}
+h2{
+    font-size: 4.2rem;
+    letter-spacing: .13rem;;
+}
+h3{
+    font-size:3.2rem;
+    letter-spacing: .1rem;
+}
+h4{
+    font-size:2rem;
+}
+img{
+    width:100%;
+}
+.btn{
+    @include btn();
+}
+.btn:hover,
+.btn:focus{
+    background: lighten($light-green-color, 10);
+    font-size:2.1rem;
+}
+::placeholder{
+    line-height: 1.5rem;
+}
+p{    
+    font-size:2rem;
+    font-family: $font-roboto;
+    line-height: 3.2rem;
+    padding:2rem 0 3rem 0;
+}
+//----------navigation and link --------//
+a{
+    padding:1.5rem;
+    text-decoration:none;
+    color:white; 
+}
+.horizontal-nav a:hover,
+.horizontal-nav a:focus{
+    color:$highlight-yellow-color;
+    font-size:2.12rem;
+}
+//---------to display active page in hightlighted color-----//
+.active-link{
+    color:$highlight-yellow-color;
+}
+//------------------------------------------------blog and contact page generic css---------------------------//
+//----------form------------//
+input{
+    border:none;
+    outline:0;
+    background:$off-white-bg;
+    padding:0;
+    margin:0 0 2rem 0;
+    line-height: 1.5rem;
+}
+input[type="text"]{
+    margin-right:5rem;
+}
+input[type="email"],
+input[type="text"]{
+    border-bottom: 2px solid $light-green-color;
+    width:calc((100% - 6rem)/2);
+}
+textarea{
+    width:100%;
+    border: 2px solid $light-green-color;
+    margin:0 0 2rem 0;
+    outline:0;
+    resize:none;
+}
+button[type="submit"]{
+    width:100%;
+    border:none;
+}
+//----------highlight color box for active or in focus input area------//
+.active-focus:focus,
+.active-focus:active{
+    outline:2px solid $highlight-yellow-color;
+}
+//------------------hamberger menu-------------//
+.menu-icon {
+    position: absolute;
+    top: 6%;
+    left: 85%;
+    display: none;
+    color:$highlight-yellow-color;
+  }
+  .menu-icon-1 {
+    position: absolute;
+    top: 3%;
+    left: 85%;
+    display: none;
+    color:$highlight-yellow-color;
+  }
+//------------------------------------------------blog and contact page footer generic css---------------------------//
+footer{
+    background:$body-text-color;
+    p{
+        color:white;
+        padding:1rem 0;
+        text-align: center;
+    }
+}

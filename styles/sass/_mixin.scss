@@ -1,0 +1,27 @@
+@mixin header-bg($header-bg-image) {  
+    background-image:url($header-bg-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+@mixin horizontal-nav(){
+    display:flex;
+    min-height: 8rem;
+    align-items:center;
+    a{
+      line-height: 2.9rem;
+      margin-right:2rem;
+    }
+    .horizontal-nav{
+      display:flex;
+  }  
+}
+@mixin btn(){
+  background:$light-green-color;
+  line-height: 3.2rem;
+  letter-spacing: .1rem;
+  transition: background 1s font-size 1s;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size:2rem;
+  color:white;
+}

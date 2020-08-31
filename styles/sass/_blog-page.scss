@@ -1,0 +1,135 @@
+.blog-page-header{
+    @include header-bg("../images/blog-header-1.jpg");//defination in mixin.scss file.image url is passed as imput argument.
+    height: 100vh; 
+}
+.header-flex-wrapper{
+   height:100%;   
+}
+.nav-container-wrapper{
+    background:black;
+}
+.nav-container-1{      
+    @include horizontal-nav();//defination is in mixin.scss. Used in home, blog and contact page.
+} 
+.header-box-text-1{
+    height:100%;
+    position:relative;
+    top:60%;
+    h2{
+        font-size:8rem;
+        color:$highlight-yellow-color;
+        line-height: 9.2rem;;
+    }
+}
+.blog{
+    background:$off-white-bg;
+    h3{
+        font-size:2.2rem;
+        font-weight: bold;
+    }   
+}
+/*---------------------------------------------------------------blog about section------------------------*/
+//----------------divide page in 2 section------------//
+.blog-flex-wrapper{ 
+    display:flex;
+    justify-content: space-between;
+}
+//---------------left side about section-------------------//
+.blog-about{
+    flex-basis: 30%;
+    padding:8rem 0 0 0;
+}
+.blog-about-1{
+    width:95%;
+}
+.blog-about-img{  
+    img{
+        box-shadow: 3rem 1.1rem 0 -1rem white;
+    }  
+}
+.blog-about-article{
+    width:70%;
+    background:white;
+    box-shadow: 2rem 0 white;
+    padding:5rem 2rem 2rem 4rem;
+    float:right;
+    ul{
+        margin:2rem 0;
+    }
+    li{
+        list-style: disc;
+        margin-top:1rem;
+    }
+    a{
+        color:$body-text-color;
+        padding:1rem 0;
+    }
+    a:hover,
+    a:focus{
+        color:lighten($body-text-color,20);
+    }
+}
+//---------------right side blog mission section-------------------//
+.blog-mission{
+    flex-basis:60%;
+}
+.blog-mission-img{    
+    img{
+        width:calc(100% - 2rem);
+        box-shadow: -2rem 2rem $highlight-yellow-color;
+        margin-left:2rem;
+    }
+}
+.blog-mission-item-1{
+    position: relative;
+    top: -10%;
+    article{
+        padding:5rem 0  0 2rem;
+        box-shadow: -.5rem .5rem $highlight-yellow-color;
+        margin:0 .5rem;
+        h2{
+            font-size:4.3rem;
+        }
+        h4{
+            color:$dark-green-color;
+            font-style:italic;
+            span{
+                font-weight: bold;
+                font-style: normal;
+            }
+        }
+    }
+}
+.blog-comments{
+    padding:4rem 0;
+    h4{
+        color:$dark-green-color;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        font-weight: bold;
+    }
+}
+.blog-comments-flex-container-1,
+.blog-comments-flex-container-2{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.blog-comments-flex-container-img-1,
+.blog-comments-flex-container-img-2{
+    flex-basis: 10%;
+}
+.blog-comments-flex-container-comment-1,
+.blog-comments-flex-container-comment-2{
+     flex-basis:85%;
+     align-self: flex-start;
+     p{
+         padding-top:1rem;
+     }
+}
+.blog-comments div:first-child{
+    margin-bottom: 3rem;
+}
+.blog-form{
+    margin-bottom:-15rem;
+}

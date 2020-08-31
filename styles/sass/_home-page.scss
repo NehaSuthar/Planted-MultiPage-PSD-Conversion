@@ -1,0 +1,185 @@
+//----------------------------------------------header section---------------------------------------//
+header{
+    @include header-bg("../images/home-image-1.jpg");//defination in mixin.scss file.image url is passed as imput argument.
+    height: 100vh; 
+}
+.header-container{
+    height:100%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows:repeat(5,1fr);
+}
+.nav-container{
+    grid-column: 1/-1;
+    @include horizontal-nav();//defination in mixin.scss file.Standard Horizontal navigation.
+}
+//-------header text box--------//
+.header-box-text{
+    grid-row:3/5;
+    grid-column: 2/5;
+    display:flex;
+    position:relative;
+    z-index:999;
+    h2{
+        font-size:16.6rem;
+        color:$white-link-color;
+        span{
+            display:block;
+            color:$highlight-yellow-color;
+       }
+    }
+}
+//--------header box image--------//
+.header-box-image{
+    grid-row:2/6;
+    grid-column: 4/6;
+    position:relative;
+    top:10%;
+    @include header-bg("../images/header-box.jpg");//defination in mixin.scss file.image url is passed as imput argument.
+}
+//---------------------------------------------------------Feature Section------------------------------------//
+//--------feature text box-------//
+.feature{
+    background:$off-white-bg;
+    padding-top:5rem;
+    h2{
+        font-size:5.63rem;
+    }
+    .feature-text-box{
+        text-align: center;
+        padding:10rem 0;
+        min-width:320px;
+        max-width:900px;
+        margin:0 auto;
+    }
+}
+//---------feature grid section----------//
+.feature-table {
+    background:white;
+  }
+  //-------feature grid section row 1-----//
+  .feature-table-row-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+   //-------feature grid section row 2-----//
+  .feature-table-row-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+//-------feature grid section content -----//
+.feature-table-content-1,
+.feature-table-content-2{
+    flex-basis: 40%; 
+    align-self: center;   
+}
+.feature-table-content-2{
+    text-align:right;
+}
+//-------feature grid section image -----//
+.feature-table-img-1{
+    width:45%;
+    height:auto;
+    img{
+        position:relative;
+        top:-10%;
+        box-shadow: 2rem 2rem $highlight-yellow-color;
+    }  
+}   
+.feature-table-img-2{
+    width:45%;
+    height:auto;
+    img{
+        position:relative;
+        bottom:-10%;
+        box-shadow: -2rem 2rem $highlight-yellow-color;
+    }  
+}
+//---------------------------------------------info section-----------------------------------------//
+.info{
+    background:$off-white-bg;
+    padding:5rem 0;
+}
+.info-section-wrapper{
+    padding:5rem 0;
+}
+.info-row-1,
+.info-row-2{
+    display:flex;
+    flex-wrap: wrap;
+}
+.info-row-1-1,
+.info-row-1-2,
+.info-row-2-1,
+.info-row-2-2{
+    display:flex;
+    flex-basis: 50%;
+    justify-content: space-between; 
+    //-------yellow background for info icons----//
+    i{
+        background:$highlight-yellow-color;
+        height:50px;
+        width:50px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    } 
+}
+//-----info icon-------------//
+.info-row-1-1 div:first-of-type,
+.info-row-1-2 div:first-of-type,
+.info-row-2-1 div:first-of-type,
+.info-row-2-2 div:first-of-type{
+    flex-basis: 10%;
+}
+//--------info content--------//
+.info-row-1-1 div:last-of-type,
+.info-row-1-2 div:last-of-type,
+.info-row-2-1 div:last-of-type,
+.info-row-2-2 div:last-of-type{
+    flex-basis: 88%;
+}
+//--------------------------------------------about section------------------------------------------/
+.about{
+    background:$off-white-bg;
+    h2{
+        letter-spacing: .1rem;
+    }
+}
+.banner{
+    width:100%;
+    height:30%;  
+}
+.about-founder{
+    display:flex;
+    flex-wrap: wrap;
+    padding:5rem 0;
+    justify-content: space-between;
+
+}
+//------founder image----------//
+.about-founder-img{
+    flex-basis: 20%;
+    img{
+        box-shadow: 1rem 1rem $highlight-yellow-color;//yellow shadow
+    }
+}
+//-------founder info content---//
+.about-fonder-article{
+    flex-basis: 70%;
+}
+//---------------------------------------footer picture gallery--------------------------------------//
+.picture-gallery{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding:5rem 0;
+    div{
+        flex-basis:31%
+    }
+}

@@ -1,0 +1,281 @@
+@media (max-width: 1050px){
+    p{
+        font-size: 1.5rem;
+        padding:1rem 0 1rem 0;
+    }
+    h3{
+        font-size: 2.5rem;
+    }
+    a{
+        padding:1rem;
+    }
+  //------------------------------------------------home page-------------------------------------------//
+    .header-box-text{
+        h2{
+            font-size:14rem;
+        }
+    }
+    .feature{
+        h2{
+            font-size:5rem;
+        }
+    }
+    .feature-table{
+        h2{
+            font-size:3rem;
+        }
+    }
+    .feature-table-content-1,
+    .feature-table-content-2{
+        padding:1rem 0;
+    }
+    .info{
+        h3{
+            font-size: 2.5rem;
+        }
+    }
+    .info-row-1-1,
+    .info-row-1-2,
+    .info-row-2-1,
+    .info-row-2-2{
+        i{
+            font-size:3rem;
+            height:40px;
+            width:40px;
+            border-radius: 50%;
+        }
+    }
+    .about{
+        h2{
+            font-size:3.5rem;
+        }
+    }
+    //------------------------------------------------home page-------------------------------------------//
+     //------------------------------------------------blog page-------------------------------------------//
+    .blog-about-article{
+        a{
+            font-size:1.75rem;
+        }
+    }
+     //------------------------------------------------blog page-------------------------------------------//
+}
+@media (max-width: 740px) {
+    .btn{
+        font-size:1.5rem;
+        padding:1rem;
+    } 
+    .nav-container,
+    .nav-container-1{
+        a{
+            padding-left:0;
+        }
+    }
+    .btn:hover,
+    .btn:focus{
+        background: lighten($light-green-color, 10);
+        font-size:2rem;
+    }
+    //------------------------------------------------home page-------------------------------------------//
+    .header-box-text{
+        grid-row:3/5;
+        grid-column: 1/5;
+    }   
+    .feature-table{
+        h2{
+            font-size:2.5rem;
+        }
+    }
+    .feature-table-content-1{
+        padding:1rem 0 1rem 2rem;
+    }
+    .feature-table-content-2{
+        padding:1rem 2rem 1rem 0;
+    }
+    .feature-table-img-1{
+        img{
+            box-shadow: 1.5rem 1.5rem $highlight-yellow-color;
+        }
+    }
+    .feature-table-img-2{
+        img{
+            box-shadow: -1.5rem 1.5rem $highlight-yellow-color;
+        }
+    }
+//------------------------------------------------home page-------------------------------------------//
+//------------------------------------------------blog page-------------------------------------------//
+.header-box-text-1{
+    position:relative;
+    top:40%;
+    h2{
+        font-size:12rem;
+        color:$highlight-yellow-color;
+        line-height: 9.2rem;;
+    }
+}
+.blog-flex-wrapper{ 
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+.blog-about{
+    flex-basis: 100%;
+    margin:5rem 0;
+}
+.blog-about-1{
+    width:100%;
+}
+.blog-about-img{
+    width:100%;
+    img{
+        box-shadow: none;
+    }
+}
+.blog-about-article{
+    width:100%;
+    float:none;
+    margin-bottom: 0;
+}
+.blog-mission{
+    flex-basis:100%;
+}
+.blog-mission-img{
+    display:none;
+}
+.blog-mission-item-1{
+    padding:5rem 0;
+    article{
+        text-align:center;
+        width:100%;
+        padding:2rem;
+        box-shadow: none;
+        border:1px solid $highlight-yellow-color;
+        border-top:none;
+        h2{
+            margin-bottom:2rem;
+        }
+    }
+}
+//------------------------------------------------blog page-------------------------------------------//
+//------------------------------------------------contact page-------------------------------------------//
+.contact-form{
+    flex-basis: 60%;
+    position:relative;
+    top:-30%;
+    form{
+        padding:10rem 3rem;
+        background:white;
+        box-shadow: -1rem 1rem $highlight-yellow-color;
+        input{
+            background:white;
+        }
+    }
+}
+//------------------------------------------------contact page-------------------------------------------//
+}
+@media (max-width: 610px) {
+    h2{
+        font-size:3rem;
+    }
+    h3{
+        font-size:2rem; 
+    }
+    nav{
+        display:none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .menu-icon-1{
+        display: block;
+    }
+    //------------------------------------------------home page-------------------------------------------//
+    .header-box-text{
+        h2{
+            font-size:8rem;
+        }
+    }
+    .feature-text-box{
+        padding-bottom:5rem;
+    }
+    article{
+        text-align:center;
+        padding:1rem 0; 
+    }
+    .feature-table-row-1{
+        flex-direction:column;
+        justify-content: center;
+      }
+      .feature-table-row-2{
+        flex-direction:column;
+        justify-content: center;
+      }
+    
+    .feature-table-content-1,
+    .feature-table-content-2{
+        flex-basis: 100%;
+        padding:0;
+    }
+    .feature-table-img-1{
+        width:100%;
+        img{
+            margin-left:-1rem;
+            box-shadow: 1rem 1rem $highlight-yellow-color;
+        }  
+    }   
+    .feature-table-img-2{
+    width:100%;
+        img{
+            margin-left:1rem;
+            box-shadow: -1rem 1rem $highlight-yellow-color;
+        }  
+    }
+    .info{
+        padding-top:3rem;
+    }
+    .info-row-1,
+    .info-row-2{
+        flex-direction:column;
+    }
+    .info-row-1-1,
+    .info-row-1-2,
+    .info-row-2-1,
+    .info-row-2-2{
+        flex-basis: 100%;
+    }
+    .about-founder-img{
+        flex-basis: 100%;
+        img{
+            margin-left:-1rem;
+            box-shadow: 1rem 1rem $highlight-yellow-color;
+        }
+    }
+    .about-fonder-article{
+        padding:2rem 0;
+        flex-basis: 100%;
+    }
+    //----------------------------------------contact section---------------------------------//
+    .contact-flex-wrapper{
+       flex-direction: column-reverse;
+    }
+    .contact-info{
+        flex-basis: 100%;
+        align-self: center;
+    }
+    .contact-info-box{
+        width:100%;
+    }
+    .margin-bottom{
+        margin-bottom:1.5rem;
+    } 
+    .contact-form{
+        flex-basis: 100%;
+    }
+    //------------------------------------------------contact section-------------------------------------------// 
+} 
+@media (max-width: 450px){
+    .header-box-text{
+        h2{
+            font-size:7rem;
+        }
+    }
+
+}

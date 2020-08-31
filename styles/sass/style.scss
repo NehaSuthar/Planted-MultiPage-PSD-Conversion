@@ -1,0 +1,16 @@
+$header-nav-color:#F0EFED;
+$highlight-yellow-color:#F8E71C;
+$off-white-bg:#F0EFED;
+$body-text-color:#2c2c2c;
+$light-green-color:#0E902D;
+$dark-green-color:#074115;
+$white-link-color:white;
+$font-roboto:'Roboto', sans-serif;
+
+@import "setup";
+@import "mixin.scss";
+@import "generic.scss";
+@import "home-page.scss";
+@import "blog-page.scss";
+@import "contact-page.scss";
+@import "media-queries.scss";
